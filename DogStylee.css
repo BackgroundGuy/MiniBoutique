@@ -1,0 +1,126 @@
+/* style Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container class for layout structure */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container2 {
+    color: black;
+    background-color: whitesmoke;
+    outline-style: solid;
+    outline-color: lightgray;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+
+/* Banner Section */
+.banner {
+    background: url('banner.jpg') no-repeat center center/cover; /*IMAGESURCETTELINE*/
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+/* Product section */
+.products {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.products h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+}
+
+/* les disp des collection des produits */
+.product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 250px;
+    transition: transform 0.3s ease;
+}
+
+.product:hover { /* transforme la taille */
+    transform: scale(1.05);
+}
+
+.product img { /* mets l'image au propre */
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.product h3 { /* modif les h3 du div product */
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #ff9900;
+}
+
+.product button {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product button:hover { /* quand on mets la souris par dessus le add cart. */
+    background-color: #333;
+}
+
+/* About Section */
+#about {
+    padding: 50px 0;
+    background-color: #eee;
+    text-align: center;
+}
+
+#about h2 { /* change dans le div about sur les h2  */
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+#about p { /* change dans le div about sur les p(paragraphe)  */
+    font-size: 1.2rem;
+    width: 80%;
+    margin: 0 auto;
+}
